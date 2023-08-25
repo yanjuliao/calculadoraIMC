@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical"
+    android:padding="20dp"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Calculadora de IMC"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:hint="Digite seu peso "
+        android:inputType="numberDecimal"
+        android:textColor="#070707"
+        android:textColorHint="#605A5A" />
+
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:hint="Digite sua altura"
+        android:inputType="numberDecimal"
+        android:textColor="#070707"
+        android:textColorHint="#605A5A" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Resultado:"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:onClick="calcularImc"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F3EAEA"
+        android:onClick="limparCampos"
+        android:shadowColor="#000000"
+        android:text="Limpar"
+        android:textColor="#020202"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#F8F5F5"
+        android:textColorLink="#FAF6F6"
+        android:textSize="18sp" />
+</LinearLayout>
